@@ -3,6 +3,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 img, video, iframe {
@@ -65,7 +66,7 @@ header {
 }
 
 .sideBar button svg {
-    /* fill: #e95d29; */
+    fill: #e95d29;
     margin-bottom: 10px;
  }
 /*** header *******************************************************/
@@ -111,7 +112,7 @@ header {
     position: relative;
 }
 
-.bannerArea .bannerCard {
+.bannerCard {
     position: absolute;
     height: auto;
     width: 250px;
@@ -123,63 +124,69 @@ header {
     color: white;
 }
 
-.bannerArea .bannerCard .bannerFoodName {
+.bannerCard .bannerFoodName {
     margin-top: 10px;
     font-weight: 500;
 }
 
-.bannerArea .bannerCard .bannerVoteArea {
+.bannerCard .bannerVoteArea {
     display: flex;
     justify-content: center;
 }
 
-.bannerArea .bannerCard .bannerVoteArea {
+.bannerCard .bannerVoteArea {
     font-size: 15px;
     padding: 5px 0px 5px 0px;
     display: flex;
     align-items: center;
 }
 
-.bannerArea .bannerCard .bannerVoteArea img {
+.bannerCard .bannerVoteArea img {
     width: 15px;
     padding-right: 2px;
 }
 
-.bannerArea .bannerCard .bannerVoteArea strong {
-    padding-left: 5px;
-}
-
-.bannerArea .bannerCard .bannerVoteArea span {
+.bannerCard .bannerVoteArea span {
     color: white;
     font-size: 10px;
     padding-left: 2px;
 }
 
-.bannerArea .bannerCard .bannerCardFooter {
+.bannerCardCategoryFood {
+    margin-right: auto;
+}
+
+.bannerCardLevelFood {
+    margin-left: auto;
+}
+
+.cardLikeCount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bannerCardFooter {
+    position: relative;
     display: flex;
     bottom: 0px;
     right: 0px;
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
-}
-
-.bannerArea .bannerCard .bannerCardFooter div {
-    padding-left: 10px;
-}
-
-.bannerArea .bannerCard .bannerCardFooter svg {
-    width: 15px;
-    fill: white;
-}
-
-.bannerArea .bannerCard .bannerCardFooter span {
-    font-size: 10px;
-}
-
-.bannerArea .bannerCard .bannerCardFooter a {
     font-size: 10px;
     color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bannerCardFooter a {
+    color: white;
+}
+
+.bannerCardFooter img {
+    width: 15px;
 }
 
 .bannerArea .banner_1{
@@ -222,6 +229,10 @@ header {
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
+}
+
+.category h3 {
+    color: black;
 }
 
 .categoryHeader {
@@ -294,7 +305,7 @@ header {
 }
 /****************** popularity ****************************/
 .card {
-    width: 360px;
+    width: 95%;
     height: 100px;
     background-color: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -319,7 +330,7 @@ header {
 
 .card .foodInfo{
     width: 100%;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .foodName{
@@ -362,35 +373,32 @@ header {
     color: gray;
 }
 
+
 .cardFooter {
-    /* position: absolute; */
+    position: relative;
     display: flex;
-    bottom: 0px;
-    right: 0px;
-    /* margin: 0px 10px 10px 0px; */
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.cardFooter img {
+    width: 10px;
+}
+    
+.cardCategoryFood {
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-}
-
-.cardFooter div {
-    /* padding-right: 10px; */
-}
-
-.cardFooter div:last-child {
-    margin-left: auto;
-}
-
-.cardFooter div:first-child {
     margin-right: auto;
 }
 
-.cardFooter svg {
-    width: 20px;
+.cardCategoryFoodIcon, .cardLikeCountIcon, .cardLevelFoodIcon, .cardLevelFoodText {
+   display: grid;
+   place-content: center;
 }
 
-.cardFooter span {
-    font-size: 10px;
-    /* padding-left: 5px; */
+.cardLevelFood {
+    width: 50px;
 }
 
 .pagination {
